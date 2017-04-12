@@ -29,10 +29,10 @@ public class MetierImpl implements IMetier {
 	
 	@PostConstruct
 	public void init(){
-		System.out.println("PostConstruct is called...");
+		//System.out.println("PostConstruct is called...");
 	}
 	  public void destroy(){
-	    System.out.println("Cleaning up");
+	   // System.out.println("Cleaning up");
 	  }
 
 	public IDao getDao() {
