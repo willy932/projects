@@ -16,6 +16,7 @@
 		<bean id="metier" class="com.springExemple.metier.MetierImpl">
 			<property name="dao" ref="mydao"></property>
 		</bean>
+		
 		<!--  <bean id="client" class="com.springExemple.SpringExpl.Client">
 		<constructor-arg type="String" value="okok"></constructor-arg>
 		<constructor-arg type="String" value="ijij"></constructor-arg>
