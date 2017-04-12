@@ -8,14 +8,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 		
-		<context:spring-configured/> 
- 	<context:annotation-config/>
+<!-- 		<context:spring-configured/>  -->
+<!--  	<context:annotation-config/> -->
   	<context:component-scan base-package="com.springExemple"/>
-  	<context:load-time-weaver/> 
-		  <bean id="mydao" class="com.springExemple.DAO.DAOImpl"></bean>
-		<bean id="metier" class="com.springExemple.metier.MetierImpl">
-			<property name="dao" ref="mydao"></property>
-		</bean>
+  	<!--  <context:load-time-weaver/> -->
+<!-- 		  <bean id="mydao" class="com.springExemple.DAO.DAOImpl"></bean> -->
+<!-- 		<bean id="metier" class="com.springExemple.metier.MetierImpl" destroy-method="destroy" > -->
+<!-- 			<property name="dao" ref="mydao"></property> -->
+<!-- 		</bean> -->
 		
 		<!--  <bean id="client" class="com.springExemple.SpringExpl.Client">
 		<constructor-arg type="String" value="okok"></constructor-arg>

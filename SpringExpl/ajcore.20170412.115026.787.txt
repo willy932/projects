@@ -1,0 +1,338 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+---- Dump Properties ---
+Dump file: ajcore.20170412.115026.787.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.factory.support.AutowireCandidateQualifier extends org.springframework.beans.BeanMetadataAttributeAccessor:
+  public static String VALUE_KEY
+  private final String typeName
+  public void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 46)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.support.AutowireCandidateQualifier.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class))
+    |               RETURN   (line 47)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class))
+  end public void <init>(Class)
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 56)
+                    INVOKESPECIAL org.springframework.beans.BeanMetadataAttributeAccessor.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String))
+    |               ALOAD_1     // Ljava/lang/String; typeName   (line 57)
+    |               LDC "Type name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 58)
+    |               ALOAD_1     // Ljava/lang/String; typeName
+    |               PUTFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+    |               RETURN   (line 59)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(Class, Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 69)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/Object; value
+                    INVOKESPECIAL org.springframework.beans.factory.support.AutowireCandidateQualifier.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class, java.lang.Object))
+    |               RETURN   (line 70)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class, java.lang.Object))
+  end public void <init>(Class, Object)
+
+  public void <init>(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 81)
+                    INVOKESPECIAL org.springframework.beans.BeanMetadataAttributeAccessor.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String, java.lang.Object))
+    |               ALOAD_1     // Ljava/lang/String; typeName   (line 82)
+    |               LDC "Type name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 83)
+    |               ALOAD_1     // Ljava/lang/String; typeName
+    |               PUTFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 84)
+    |               GETSTATIC org.springframework.beans.factory.support.AutowireCandidateQualifier.VALUE_KEY Ljava/lang/String;
+    |               ALOAD_2     // Ljava/lang/Object; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AutowireCandidateQualifier.setAttribute (Ljava/lang/String;Ljava/lang/Object;)V
+    |               RETURN   (line 85)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String, java.lang.Object))
+  end public void <init>(String, Object)
+
+  public String getTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 94)
+                    GETFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+                    ARETURN
+  end public String getTypeName()
+
+  static void <clinit>():
+                    LDC "value"   (line 35)
+                    PUTSTATIC org.springframework.beans.factory.support.AutowireCandidateQualifier.VALUE_KEY Ljava/lang/String;
+                    RETURN
+  end static void <clinit>()
+end public class org.springframework.beans.factory.support.AutowireCandidateQualifier
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:384)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:50)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3173)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2565)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:480)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:99)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.checkQualifier(QualifierAnnotationAutowireCandidateResolver.java:273)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.checkQualifiers(QualifierAnnotationAutowireCandidateResolver.java:171)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.isAutowireCandidate(QualifierAnnotationAutowireCandidateResolver.java:144)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:676)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:635)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.factory.support.AutowireCandidateQualifier extends org.springframework.beans.BeanMetadataAttributeAccessor:
+  public static String VALUE_KEY
+  private final String typeName
+  public void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 46)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    INVOKESPECIAL org.springframework.beans.factory.support.AutowireCandidateQualifier.<init> (Ljava/lang/String;)V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class))
+    |               RETURN   (line 47)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class))
+  end public void <init>(Class)
+
+  public void <init>(String):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 56)
+                    INVOKESPECIAL org.springframework.beans.BeanMetadataAttributeAccessor.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String))
+    |               ALOAD_1     // Ljava/lang/String; typeName   (line 57)
+    |               LDC "Type name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 58)
+    |               ALOAD_1     // Ljava/lang/String; typeName
+    |               PUTFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+    |               RETURN   (line 59)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String))
+  end public void <init>(String)
+
+  public void <init>(Class, Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 69)
+                    ALOAD_1     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;
+                    ALOAD_2     // Ljava/lang/Object; value
+                    INVOKESPECIAL org.springframework.beans.factory.support.AutowireCandidateQualifier.<init> (Ljava/lang/String;Ljava/lang/Object;)V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class, java.lang.Object))
+    |               RETURN   (line 70)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.Class, java.lang.Object))
+  end public void <init>(Class, Object)
+
+  public void <init>(String, Object):
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 81)
+                    INVOKESPECIAL org.springframework.beans.BeanMetadataAttributeAccessor.<init> ()V
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String, java.lang.Object))
+    |               ALOAD_1     // Ljava/lang/String; typeName   (line 82)
+    |               LDC "Type name must not be null"
+    |               INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 83)
+    |               ALOAD_1     // Ljava/lang/String; typeName
+    |               PUTFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+    |               ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 84)
+    |               GETSTATIC org.springframework.beans.factory.support.AutowireCandidateQualifier.VALUE_KEY Ljava/lang/String;
+    |               ALOAD_2     // Ljava/lang/Object; value
+    |               INVOKEVIRTUAL org.springframework.beans.factory.support.AutowireCandidateQualifier.setAttribute (Ljava/lang/String;Ljava/lang/Object;)V
+    |               RETURN   (line 85)
+    constructor-execution(void org.springframework.beans.factory.support.AutowireCandidateQualifier.<init>(java.lang.String, java.lang.Object))
+  end public void <init>(String, Object)
+
+  public String getTypeName():
+                    ALOAD_0     // Lorg/springframework/beans/factory/support/AutowireCandidateQualifier; this   (line 94)
+                    GETFIELD org.springframework.beans.factory.support.AutowireCandidateQualifier.typeName Ljava/lang/String;
+                    ARETURN
+  end public String getTypeName()
+
+  static void <clinit>():
+                    LDC "value"   (line 35)
+                    PUTSTATIC org.springframework.beans.factory.support.AutowireCandidateQualifier.VALUE_KEY Ljava/lang/String;
+                    RETURN
+  end static void <clinit>()
+end public class org.springframework.beans.factory.support.AutowireCandidateQualifier
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:742)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1720)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.checkQualifier(QualifierAnnotationAutowireCandidateResolver.java:273)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.checkQualifiers(QualifierAnnotationAutowireCandidateResolver.java:171)
+	at org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver.isAutowireCandidate(QualifierAnnotationAutowireCandidateResolver.java:144)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:676)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:635)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.isAutowireCandidate(DefaultListableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin
+java.vm.version=25.121-b13
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=FR
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\formation\git\projects\SpringExpl
+java.runtime.version=1.8.0_121-b13
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\FORMAT~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Outils\apache-maven-3.3.9\bin;C:\Users\formation\AppData\Local\Microsoft\WindowsApps;;C:\Users\formation\Desktop\JRE JDK ECLIPSE\sts-bundle\sts-3.8.3.RELEASE;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\formation
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.8
+java.class.path=C:\Users\formation\git\projects\SpringExpl\target\classes;C:\Users\formation\.m2\repository\org\springframework\spring-aspects\4.1.4.RELEASE\spring-aspects-4.1.4.RELEASE.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjrt\1.6.12\aspectjrt-1.6.12.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjweaver\1.6.12\aspectjweaver-1.6.12.jar;C:\Users\formation\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\formation\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\formation\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\formation\Desktop\spring-agent-2.5.6.jar
+user.name=formation
+java.vm.specification.version=1.8
+sun.java.command=com.springExemple.presentation.Presentation2
+java.home=C:\Program Files\Java\jre1.8.0_121
+sun.arch.data.model=64
+user.language=fr
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_121
+java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

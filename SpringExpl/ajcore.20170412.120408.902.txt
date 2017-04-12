@@ -1,0 +1,332 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+---- Dump Properties ---
+Dump file: ajcore.20170412.120408.902.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin
+java.vm.version=25.121-b13
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=FR
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\formation\git\projects\SpringExpl
+java.runtime.version=1.8.0_121-b13
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\FORMAT~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Outils\apache-maven-3.3.9\bin;C:\Users\formation\AppData\Local\Microsoft\WindowsApps;;C:\Users\formation\Desktop\JRE JDK ECLIPSE\sts-bundle\sts-3.8.3.RELEASE;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\formation
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.8
+java.class.path=C:\Users\formation\git\projects\SpringExpl\target\classes;C:\Users\formation\.m2\repository\org\springframework\spring-aspects\4.1.4.RELEASE\spring-aspects-4.1.4.RELEASE.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjrt\1.6.12\aspectjrt-1.6.12.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjweaver\1.6.12\aspectjweaver-1.6.12.jar;C:\Users\formation\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\formation\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\formation\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\formation\Desktop\spring-agent-2.5.6.jar
+user.name=formation
+java.vm.specification.version=1.8
+sun.java.command=com.springExemple.presentation.Presentation2
+java.home=C:\Program Files\Java\jre1.8.0_121
+sun.arch.data.model=64
+user.language=fr
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_121
+java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/formation/.m2/repository/org/springframework/spring-aspects/4.1.4.RELEASE/spring-aspects-4.1.4.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.context.support.MessageSourceSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.context.support.MessageSourceSupport extends java.lang.Object:
+  private static final java.text.MessageFormat INVALID_MESSAGE_FORMAT
+  protected final org.apache.commons.logging.Log logger
+  private boolean alwaysUseMessageFormat
+  private final java.util.Map messageFormatsPerMessage [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/util/Map<Ljava/util/Locale;Ljava/text/MessageFormat;>;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 41)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.springframework.context.support.MessageSourceSupport.<init>())
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 46)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               INVOKESTATIC org.apache.commons.logging.LogFactory.getLog (Ljava/lang/Class;)Lorg/apache/commons/logging/Log;
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.logger Lorg/apache/commons/logging/Log;
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 48)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 55)
+    |               NEW java.util.HashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTFIELD org.springframework.context.support.MessageSourceSupport.messageFormatsPerMessage Ljava/util/Map;
+    |               RETURN
+    constructor-execution(void org.springframework.context.support.MessageSourceSupport.<init>())
+  end public void <init>()
+
+  public void setAlwaysUseMessageFormat(boolean):
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 74)
+                    ILOAD_1     // Z alwaysUseMessageFormat
+                    PUTFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    RETURN   (line 75)
+  end public void setAlwaysUseMessageFormat(boolean)
+
+  protected boolean isAlwaysUseMessageFormat():
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 82)
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    IRETURN
+  end protected boolean isAlwaysUseMessageFormat()
+
+  protected String renderDefaultMessage(String, Object[], java.util.Locale):
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 101)
+                    ALOAD_1     // Ljava/lang/String; defaultMessage
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    ALOAD_3     // Ljava/util/Locale; locale
+                    INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.formatMessage (Ljava/lang/String;[Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;
+                    ARETURN
+  end protected String renderDefaultMessage(String, Object[], java.util.Locale)
+
+  protected String formatMessage(String, Object[], java.util.Locale):
+                    ALOAD_1     // Ljava/lang/String; msg   (line 115)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+                    IFNE L1
+                    ALOAD_2     // [Ljava/lang/Object; args
+                    INVOKESTATIC org.springframework.util.ObjectUtils.isEmpty ([Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ALOAD_1     // Ljava/lang/String; msg   (line 116)
+                    ARETURN
+                L1: ACONST_NULL   (line 118)
+                    ASTORE 4
+                    ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 119)
+                    GETFIELD org.springframework.context.support.MessageSourceSupport.messageFormatsPerMessage Ljava/util/Map;
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 120)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.messageFormatsPerMessage Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; msg
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.util.Map
+    |               ASTORE 6
+    |               ALOAD 6     // Ljava/util/Map; messageFormatsPerLocale   (line 121)
+    |               IFNULL L2
+    |               ALOAD 6     // Ljava/util/Map; messageFormatsPerLocale   (line 122)
+    |               ALOAD_3     // Ljava/util/Locale; locale
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.text.MessageFormat
+    |               ASTORE 4     // Ljava/text/MessageFormat; messageFormat
+    |               GOTO L3
+    |           L2: NEW java.util.HashMap   (line 125)
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               ASTORE 6     // Ljava/util/Map; messageFormatsPerLocale
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 126)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.messageFormatsPerMessage Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; msg
+    |               ALOAD 6     // Ljava/util/Map; messageFormatsPerLocale
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L3: ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 128)
+    |               IFNONNULL L6
+    | catch java.lang.IllegalArgumentException -> E0
+    | |             ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 130)
+    | |             ALOAD_1     // Ljava/lang/String; msg
+    | |             ALOAD_3     // Ljava/util/Locale; locale
+    | |             INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.createMessageFormat (Ljava/lang/String;Ljava/util/Locale;)Ljava/text/MessageFormat;
+    | |             ASTORE 4     // Ljava/text/MessageFormat; messageFormat
+    | catch java.lang.IllegalArgumentException -> E0
+    |               GOTO L5   (line 140)
+    |           E0: ASTORE 7   (line 132)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this   (line 135)
+    |               GETFIELD org.springframework.context.support.MessageSourceSupport.alwaysUseMessageFormat Z
+    |               IFEQ L4
+    |               ALOAD 7     // Ljava/lang/IllegalArgumentException; ex   (line 136)
+    |               ATHROW
+    |           L4: GETSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;   (line 139)
+    |               ASTORE 4     // Ljava/text/MessageFormat; messageFormat
+    |           L5: ALOAD 6     // Ljava/util/Map; messageFormatsPerLocale   (line 141)
+    |               ALOAD_3     // Ljava/util/Locale; locale
+    |               ALOAD 4     // Ljava/text/MessageFormat; messageFormat
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |           L6: ALOAD 5   (line 143)
+    |               MONITOREXIT
+    finally -> E2
+                    GOTO L7
+    finally -> E2
+    |           E2: ASTORE 8
+    |               ALOAD 5
+    |               MONITOREXIT
+    finally -> E2
+                    ALOAD 8
+                    ATHROW
+                L7: ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 144)
+                    GETSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;
+                    IF_ACMPNE L8
+                    ALOAD_1     // Ljava/lang/String; msg   (line 145)
+                    ARETURN
+                L8: ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 147)
+                    DUP
+                    ASTORE 5
+                    MONITORENTER
+    finally -> E4
+    |               ALOAD 4     // Ljava/text/MessageFormat; messageFormat   (line 148)
+    |               ALOAD_0     // Lorg/springframework/context/support/MessageSourceSupport; this
+    |               ALOAD_2     // [Ljava/lang/Object; args
+    |               ALOAD_3     // Ljava/util/Locale; locale
+    |               INVOKEVIRTUAL org.springframework.context.support.MessageSourceSupport.resolveArguments ([Ljava/lang/Object;Ljava/util/Locale;)[Ljava/lang/Object;
+    |               INVOKEVIRTUAL java.text.MessageFormat.format (Ljava/lang/Object;)Ljava/lang/String;
+    |               ALOAD 5
+    |               MONITOREXIT
+    finally -> E4
+                    ARETURN
+    finally -> E4
+    |           E4: ASTORE 9   (line 149)
+    |               ALOAD 5
+    |               MONITOREXIT
+    finally -> E4
+                    ALOAD 9
+                    ATHROW
+  end protected String formatMessage(String, Object[], java.util.Locale)
+
+  protected java.text.MessageFormat createMessageFormat(String, java.util.Locale):
+                    NEW java.text.MessageFormat   (line 159)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; msg
+                    IFNULL L0
+                    ALOAD_1     // Ljava/lang/String; msg
+                    GOTO L1
+                L0: LDC ""
+                L1: ALOAD_2     // Ljava/util/Locale; locale
+                    INVOKESPECIAL java.text.MessageFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V
+                    ARETURN
+  end protected java.text.MessageFormat createMessageFormat(String, java.util.Locale)
+
+  protected Object[] resolveArguments(Object[], java.util.Locale):
+                    ALOAD_1     // [Ljava/lang/Object; args   (line 171)
+                    ARETURN
+  end protected Object[] resolveArguments(Object[], java.util.Locale)
+
+  static void <clinit>():
+                    NEW java.text.MessageFormat   (line 43)
+                    DUP
+                    LDC ""
+                    INVOKESPECIAL java.text.MessageFormat.<init> (Ljava/lang/String;)V
+                    PUTSTATIC org.springframework.context.support.MessageSourceSupport.INVALID_MESSAGE_FORMAT Ljava/text/MessageFormat;
+                    RETURN
+  end static void <clinit>()
+end public abstract class org.springframework.context.support.MessageSourceSupport
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.weaver.UnresolvedType.forSignature(UnresolvedType.java:384)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:275)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3173)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2565)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:480)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:99)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.context.support.AbstractApplicationContext.initMessageSource(AbstractApplicationContext.java:641)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:468)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.context.NoSuchMessageException
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
