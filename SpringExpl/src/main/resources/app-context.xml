@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:ws="http://jax-ws.dev.java.net/spring/core"
+       xmlns:wss="http://jax-ws.dev.java.net/spring/servlet"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<context:component-scan base-package="com.springExemple" />
+		<context:annotation-config/>
+		 <bean id="mydao" class="com.springExemple.DAO.DAOImpl"></bean>
+		<bean id="metier" class="com.springExemple.metier.MetierImpl">
+			<property name="dao" ref="mydao"></property>
+		</bean>
+		<bean id="client" class="com.springExemple.SpringExpl.Client">
+		<constructor-arg type="String" value="okok"></constructor-arg>
+		<constructor-arg type="String" value="ijij"></constructor-arg>
+		</bean>
+		<bean id="list" class="com.springExemple.SpringExpl.Client">
+		<property name="list">
+			<list>
+				<value>1</value>
+				<ref bean="voiture" />
+				<value>29</value>
+				<value>francais</value>
+				<value>anglais</value>
+			</list>
+		</property>
+		</bean>
+		
+		<bean id="voiture" class="com.springExemple.SpringExpl.Voiture">
+		<constructor-arg type="String" value="Renault"></constructor-arg>
+		<constructor-arg type="String" value="Clio"></constructor-arg>
+		</bean>
+		
+	
+		
+		<!--  <bean id="utilisateurFactory" class="com.springExemple.SpringExpl.UtilisateurFactory"/>
+		<bean id="utilisateur" factory-bean="utilisateurFactory" factory-method="createInstance" scope="prototype">
+		<constructor-arg type="String" value="Directeur"></constructor-arg>
+		</bean> -->
+
+</beans:beans>
