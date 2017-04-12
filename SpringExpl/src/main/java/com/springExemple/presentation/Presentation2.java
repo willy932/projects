@@ -17,6 +17,7 @@ public class Presentation2 {
 		//Utilisateur u = (Utilisateur)context.getBean("utilisateur");
 		//System.out.println(metier.calcul());
 		System.out.println(metier.calcul());
+		System.out.println();
 	}
 
 }
