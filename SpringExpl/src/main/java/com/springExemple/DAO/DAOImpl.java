@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 public class DAOImpl implements IDao{
 	
 	public int getValue(){
-		return 20;
+		return 30;
 	}
 
 }
