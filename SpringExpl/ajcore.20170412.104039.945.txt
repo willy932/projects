@@ -1,0 +1,609 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+---- Dump Properties ---
+Dump file: ajcore.20170412.104039.945.txt
+Dump reason: org.aspectj.bridge.AbortException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+Message: abort trouble in: 
+public class org.springframework.beans.propertyeditors.CustomCollectionEditor extends java.beans.PropertyEditorSupport:
+  private final Class collectionType [Signature(Ljava/lang/Class<+Ljava/util/Collection;>;)]
+  private final boolean nullAsEmptyCollection
+  public void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 63)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.beans.propertyeditors.CustomCollectionEditor.<init> (Ljava/lang/Class;Z)V
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class))
+    |               RETURN   (line 64)
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class))
+  end public void <init>(Class)
+
+  public void <init>(Class, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 85)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class, boolean))
+    |               ALOAD_1     // Ljava/lang/Class; collectionType   (line 86)
+    |               IFNONNULL L0
+    |               NEW java.lang.IllegalArgumentException   (line 87)
+    |               DUP
+    |               LDC "Collection type is required"
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L0: LDC java.util.Collection   (line 89)
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+    |               IFNE L1
+    |               NEW java.lang.IllegalArgumentException   (line 90)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+    |               LDC "Collection type ["
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;   (line 91)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "] does not implement [java.util.Collection]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 93)
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               PUTFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 94)
+    |               ILOAD_2     // Z nullAsEmptyCollection
+    |               PUTFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.nullAsEmptyCollection Z
+    |               RETURN   (line 95)
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class, boolean))
+  end public void <init>(Class, boolean)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 103)
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.setValue (Ljava/lang/Object;)V
+                    RETURN   (line 104)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public void setValue(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 111)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.nullAsEmptyCollection Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 112)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 114)
+                    IFNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.alwaysCreateNewCollection ()Z
+                    IFNE L2
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 116)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9
+                L2: ALOAD_1     // Ljava/lang/Object; value   (line 118)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L5
+                    ALOAD_1     // Ljava/lang/Object; value   (line 120)
+                    CHECKCAST java.util.Collection
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 121)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ALOAD_2     // Ljava/util/Collection; source
+                    INVOKEINTERFACE java.util.Collection.size ()I
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/util/Collection; source   (line 122)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                L3: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFEQ L4
+                    ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 5
+                    ALOAD_3     // Ljava/util/Collection; target   (line 123)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD 5     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L3   (line 124)
+                L4: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 125)
+                    ALOAD_3     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9   (line 126)
+                L5: ALOAD_1     // Ljava/lang/Object; value   (line 127)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L8
+                    ALOAD_1     // Ljava/lang/Object; value   (line 129)
+                    INVOKESTATIC java.lang.reflect.Array.getLength (Ljava/lang/Object;)I
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 130)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ILOAD_2     // I length
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_3
+                    ICONST_0   (line 131)
+                    ISTORE 4
+                L6: ILOAD 4     // I i
+                    ILOAD_2     // I length
+                    IF_ICMPGE L7
+                    ALOAD_3     // Ljava/util/Collection; target   (line 132)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_1     // Ljava/lang/Object; value
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC 4 1     // I i   (line 131)
+                    GOTO L6
+                L7: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 134)
+                    ALOAD_3     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9   (line 135)
+                L8: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 138)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Collection; target   (line 139)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 140)
+                    ALOAD_2     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                L9: RETURN   (line 142)
+  end public void setValue(Object)
+
+  protected java.util.Collection createCollection(Class, int):
+                    ALOAD_1     // Ljava/lang/Class; collectionType   (line 153)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFNE L0
+    catch java.lang.Exception -> E0
+    |               ALOAD_1     // Ljava/lang/Class; collectionType   (line 155)
+    |               INVOKEVIRTUAL java.lang.Class.newInstance ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Collection
+    catch java.lang.Exception -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 157)
+                    NEW java.lang.IllegalArgumentException   (line 158)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Could not instantiate collection class ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;   (line 159)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: LDC java.util.List   (line 162)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    NEW java.util.ArrayList   (line 163)
+                    DUP
+                    ILOAD_2     // I initialCapacity
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ARETURN
+                L1: LDC java.util.SortedSet   (line 165)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    NEW java.util.TreeSet   (line 166)
+                    DUP
+                    INVOKESPECIAL java.util.TreeSet.<init> ()V
+                    ARETURN
+                L2: NEW java.util.LinkedHashSet   (line 169)
+                    DUP
+                    ILOAD_2     // I initialCapacity
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ARETURN
+  end protected java.util.Collection createCollection(Class, int)
+
+  protected boolean alwaysCreateNewCollection():
+                    ICONST_0   (line 181)
+                    IRETURN
+  end protected boolean alwaysCreateNewCollection()
+
+  protected Object convertElement(Object):
+                    ALOAD_1     // Ljava/lang/Object; element   (line 199)
+                    ARETURN
+  end protected Object convertElement(Object)
+
+  public String getAsText():
+                    ACONST_NULL   (line 209)
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.CustomCollectionEditor
+ -- (NullPointerException) null
+null
+java.lang.NullPointerException
+
+org.aspectj.bridge.AbortException: trouble in: 
+public class org.springframework.beans.propertyeditors.CustomCollectionEditor extends java.beans.PropertyEditorSupport:
+  private final Class collectionType [Signature(Ljava/lang/Class<+Ljava/util/Collection;>;)]
+  private final boolean nullAsEmptyCollection
+  public void <init>(Class):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 63)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    ICONST_0
+                    INVOKESPECIAL org.springframework.beans.propertyeditors.CustomCollectionEditor.<init> (Ljava/lang/Class;Z)V
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class))
+    |               RETURN   (line 64)
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class))
+  end public void <init>(Class)
+
+  public void <init>(Class, boolean):
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 85)
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.<init> ()V
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class, boolean))
+    |               ALOAD_1     // Ljava/lang/Class; collectionType   (line 86)
+    |               IFNONNULL L0
+    |               NEW java.lang.IllegalArgumentException   (line 87)
+    |               DUP
+    |               LDC "Collection type is required"
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L0: LDC java.util.Collection   (line 89)
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+    |               IFNE L1
+    |               NEW java.lang.IllegalArgumentException   (line 90)
+    |               DUP
+    |               NEW java.lang.StringBuilder
+    |               DUP
+    |               INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+    |               LDC "Collection type ["
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;   (line 91)
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               LDC "] does not implement [java.util.Collection]"
+    |               INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    |               INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+    |               INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+    |               ATHROW
+    |           L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 93)
+    |               ALOAD_1     // Ljava/lang/Class; collectionType
+    |               PUTFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+    |               ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 94)
+    |               ILOAD_2     // Z nullAsEmptyCollection
+    |               PUTFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.nullAsEmptyCollection Z
+    |               RETURN   (line 95)
+    constructor-execution(void org.springframework.beans.propertyeditors.CustomCollectionEditor.<init>(java.lang.Class, boolean))
+  end public void <init>(Class, boolean)
+
+  public void setAsText(String) throws java.lang.IllegalArgumentException:
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 103)
+                    ALOAD_1     // Ljava/lang/String; text
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.setValue (Ljava/lang/Object;)V
+                    RETURN   (line 104)
+  end public void setAsText(String) throws java.lang.IllegalArgumentException
+
+  public void setValue(Object):
+                    ALOAD_1     // Ljava/lang/Object; value   (line 111)
+                    IFNONNULL L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.nullAsEmptyCollection Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 112)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ICONST_0
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9
+                L0: ALOAD_1     // Ljava/lang/Object; value   (line 114)
+                    IFNULL L1
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.alwaysCreateNewCollection ()Z
+                    IFNE L2
+                L1: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 116)
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9
+                L2: ALOAD_1     // Ljava/lang/Object; value   (line 118)
+                    INSTANCEOF java.util.Collection
+                    IFEQ L5
+                    ALOAD_1     // Ljava/lang/Object; value   (line 120)
+                    CHECKCAST java.util.Collection
+                    ASTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 121)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ALOAD_2     // Ljava/util/Collection; source
+                    INVOKEINTERFACE java.util.Collection.size ()I
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/util/Collection; source   (line 122)
+                    INVOKEINTERFACE java.util.Collection.iterator ()Ljava/util/Iterator;
+                    ASTORE 4
+                L3: ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.hasNext ()Z
+                    IFEQ L4
+                    ALOAD 4
+                    INVOKEINTERFACE java.util.Iterator.next ()Ljava/lang/Object;
+                    ASTORE 5
+                    ALOAD_3     // Ljava/util/Collection; target   (line 123)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD 5     // Ljava/lang/Object; elem
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    GOTO L3   (line 124)
+                L4: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 125)
+                    ALOAD_3     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9   (line 126)
+                L5: ALOAD_1     // Ljava/lang/Object; value   (line 127)
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    INVOKEVIRTUAL java.lang.Class.isArray ()Z
+                    IFEQ L8
+                    ALOAD_1     // Ljava/lang/Object; value   (line 129)
+                    INVOKESTATIC java.lang.reflect.Array.getLength (Ljava/lang/Object;)I
+                    ISTORE_2
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 130)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ILOAD_2     // I length
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_3
+                    ICONST_0   (line 131)
+                    ISTORE 4
+                L6: ILOAD 4     // I i
+                    ILOAD_2     // I length
+                    IF_ICMPGE L7
+                    ALOAD_3     // Ljava/util/Collection; target   (line 132)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_1     // Ljava/lang/Object; value
+                    ILOAD 4     // I i
+                    INVOKESTATIC java.lang.reflect.Array.get (Ljava/lang/Object;I)Ljava/lang/Object;
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    IINC 4 1     // I i   (line 131)
+                    GOTO L6
+                L7: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 134)
+                    ALOAD_3     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                    GOTO L9   (line 135)
+                L8: ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 138)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    GETFIELD org.springframework.beans.propertyeditors.CustomCollectionEditor.collectionType Ljava/lang/Class;
+                    ICONST_1
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.createCollection (Ljava/lang/Class;I)Ljava/util/Collection;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/util/Collection; target   (line 139)
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this
+                    ALOAD_1     // Ljava/lang/Object; value
+                    INVOKEVIRTUAL org.springframework.beans.propertyeditors.CustomCollectionEditor.convertElement (Ljava/lang/Object;)Ljava/lang/Object;
+                    INVOKEINTERFACE java.util.Collection.add (Ljava/lang/Object;)Z
+                    POP
+                    ALOAD_0     // Lorg/springframework/beans/propertyeditors/CustomCollectionEditor; this   (line 140)
+                    ALOAD_2     // Ljava/util/Collection; target
+                    INVOKESPECIAL java.beans.PropertyEditorSupport.setValue (Ljava/lang/Object;)V
+                L9: RETURN   (line 142)
+  end public void setValue(Object)
+
+  protected java.util.Collection createCollection(Class, int):
+                    ALOAD_1     // Ljava/lang/Class; collectionType   (line 153)
+                    INVOKEVIRTUAL java.lang.Class.isInterface ()Z
+                    IFNE L0
+    catch java.lang.Exception -> E0
+    |               ALOAD_1     // Ljava/lang/Class; collectionType   (line 155)
+    |               INVOKEVIRTUAL java.lang.Class.newInstance ()Ljava/lang/Object;
+    |               CHECKCAST java.util.Collection
+    catch java.lang.Exception -> E0
+                    ARETURN
+                E0: ASTORE_3   (line 157)
+                    NEW java.lang.IllegalArgumentException   (line 158)
+                    DUP
+                    NEW java.lang.StringBuilder
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Could not instantiate collection class ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Class.getName ()Ljava/lang/String;   (line 159)
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]: "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/Exception; ex
+                    INVOKEVIRTUAL java.lang.Exception.getMessage ()Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.IllegalArgumentException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: LDC java.util.List   (line 162)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L1
+                    NEW java.util.ArrayList   (line 163)
+                    DUP
+                    ILOAD_2     // I initialCapacity
+                    INVOKESPECIAL java.util.ArrayList.<init> (I)V
+                    ARETURN
+                L1: LDC java.util.SortedSet   (line 165)
+                    ALOAD_1     // Ljava/lang/Class; collectionType
+                    INVOKEVIRTUAL java.lang.Object.equals (Ljava/lang/Object;)Z
+                    IFEQ L2
+                    NEW java.util.TreeSet   (line 166)
+                    DUP
+                    INVOKESPECIAL java.util.TreeSet.<init> ()V
+                    ARETURN
+                L2: NEW java.util.LinkedHashSet   (line 169)
+                    DUP
+                    ILOAD_2     // I initialCapacity
+                    INVOKESPECIAL java.util.LinkedHashSet.<init> (I)V
+                    ARETURN
+  end protected java.util.Collection createCollection(Class, int)
+
+  protected boolean alwaysCreateNewCollection():
+                    ICONST_0   (line 181)
+                    IRETURN
+  end protected boolean alwaysCreateNewCollection()
+
+  protected Object convertElement(Object):
+                    ALOAD_1     // Ljava/lang/Object; element   (line 199)
+                    ARETURN
+  end protected Object convertElement(Object)
+
+  public String getAsText():
+                    ACONST_NULL   (line 209)
+                    ARETURN
+  end public String getAsText()
+
+end public class org.springframework.beans.propertyeditors.CustomCollectionEditor
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:742)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1720)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.beans.PropertyEditorRegistrySupport.createDefaultEditors(PropertyEditorRegistrySupport.java:225)
+	at org.springframework.beans.PropertyEditorRegistrySupport.getDefaultEditor(PropertyEditorRegistrySupport.java:191)
+	at org.springframework.beans.TypeConverterDelegate.findDefaultEditor(TypeConverterDelegate.java:358)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:193)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:107)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:64)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:40)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1007)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin
+java.vm.version=25.121-b13
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=FR
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\formation\git\projects\SpringExpl
+java.runtime.version=1.8.0_121-b13
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\FORMAT~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Outils\apache-maven-3.3.9\bin;C:\Users\formation\AppData\Local\Microsoft\WindowsApps;;C:\Users\formation\Desktop\JRE JDK ECLIPSE\sts-bundle\sts-3.8.3.RELEASE;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\formation
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.8
+java.class.path=C:\Users\formation\git\projects\SpringExpl\target\classes;C:\Users\formation\.m2\repository\org\springframework\spring-aspects\4.1.4.RELEASE\spring-aspects-4.1.4.RELEASE.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjrt\1.6.12\aspectjrt-1.6.12.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjweaver\1.6.12\aspectjweaver-1.6.12.jar;C:\Users\formation\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\formation\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\formation\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\formation\Desktop\spring-agent-2.5.6.jar
+user.name=formation
+java.vm.specification.version=1.8
+sun.java.command=com.springExemple.presentation.Presentation2
+java.home=C:\Program Files\Java\jre1.8.0_121
+sun.arch.data.model=64
+user.language=fr
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_121
+java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+Empty

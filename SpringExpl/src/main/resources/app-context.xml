@@ -8,13 +8,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 		
-		<context:component-scan base-package="com.springExemple" />
-		<context:annotation-config/>
-		 <bean id="mydao" class="com.springExemple.DAO.DAOImpl"></bean>
+		<context:spring-configured/> 
+ 	<context:annotation-config/>
+  	<context:component-scan base-package="com.springExemple"/>
+  	<context:load-time-weaver/> 
+		  <bean id="mydao" class="com.springExemple.DAO.DAOImpl"></bean>
 		<bean id="metier" class="com.springExemple.metier.MetierImpl">
 			<property name="dao" ref="mydao"></property>
 		</bean>
-		<bean id="client" class="com.springExemple.SpringExpl.Client">
+		<!--  <bean id="client" class="com.springExemple.SpringExpl.Client">
 		<constructor-arg type="String" value="okok"></constructor-arg>
 		<constructor-arg type="String" value="ijij"></constructor-arg>
 		</bean>
@@ -33,7 +35,7 @@
 		<bean id="voiture" class="com.springExemple.SpringExpl.Voiture">
 		<constructor-arg type="String" value="Renault"></constructor-arg>
 		<constructor-arg type="String" value="Clio"></constructor-arg>
-		</bean>
+		</bean>-->
 		
 	
 		

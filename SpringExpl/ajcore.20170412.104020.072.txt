@@ -1,0 +1,785 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+---- Dump Properties ---
+Dump file: ajcore.20170412.104020.072.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin
+java.vm.version=25.121-b13
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=FR
+user.script=
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\formation\git\projects\SpringExpl
+java.runtime.version=1.8.0_121-b13
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\FORMAT~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 10
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Outils\apache-maven-3.3.9\bin;C:\Users\formation\AppData\Local\Microsoft\WindowsApps;;C:\Users\formation\Desktop\JRE JDK ECLIPSE\sts-bundle\sts-3.8.3.RELEASE;;.
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.0
+user.home=C:\Users\formation
+user.timezone=Europe/Paris
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.8
+java.class.path=C:\Users\formation\git\projects\SpringExpl\target\classes;C:\Users\formation\.m2\repository\org\springframework\spring-aspects\4.1.4.RELEASE\spring-aspects-4.1.4.RELEASE.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjrt\1.6.12\aspectjrt-1.6.12.jar;C:\Users\formation\.m2\repository\org\aspectj\aspectjweaver\1.6.12\aspectjweaver-1.6.12.jar;C:\Users\formation\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\formation\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\formation\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\formation\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;C:\Users\formation\Desktop\spring-agent-2.5.6.jar
+user.name=formation
+java.vm.specification.version=1.8
+sun.java.command=com.springExemple.presentation.Presentation2
+java.home=C:\Program Files\Java\jre1.8.0_121
+sun.arch.data.model=64
+user.language=fr
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_121
+java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\windows\Sun\Java\lib\ext
+sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.6.12 built on Tuesday Oct 18, 2011 at 17:52:06 GMT
+info register classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+info using configuration file:/C:/Users/formation/.m2/repository/org/springframework/spring-aspects/4.1.4.RELEASE/spring-aspects-4.1.4.RELEASE.jar!/META-INF/aop.xml
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.jndi.support.SimpleJndiBeanFactory
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public class org.springframework.jndi.support.SimpleJndiBeanFactory extends org.springframework.jndi.JndiLocatorSupport implements org.springframework.beans.factory.BeanFactory:
+  private final java.util.Set shareableResources [Signature(Ljava/util/Set<Ljava/lang/String;>;)]
+  private final java.util.Map singletonObjects [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)]
+  private final java.util.Map resourceTypes [Signature(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;)]
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 71)
+                    INVOKESPECIAL org.springframework.jndi.JndiLocatorSupport.<init> ()V
+    constructor-execution(void org.springframework.jndi.support.SimpleJndiBeanFactory.<init>())
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 62)
+    |               NEW java.util.HashSet
+    |               DUP
+    |               INVOKESPECIAL java.util.HashSet.<init> ()V
+    |               PUTFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.shareableResources Ljava/util/Set;
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 65)
+    |               NEW java.util.HashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 68)
+    |               NEW java.util.HashMap
+    |               DUP
+    |               INVOKESPECIAL java.util.HashMap.<init> ()V
+    |               PUTFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 72)
+    |               ICONST_1
+    |               INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.setResourceRef (Z)V
+    |               RETURN   (line 73)
+    constructor-execution(void org.springframework.jndi.support.SimpleJndiBeanFactory.<init>())
+  end public void <init>()
+
+  public void addShareableResource(String):
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 83)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.shareableResources Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; shareableResource
+                    INVOKEINTERFACE java.util.Set.add (Ljava/lang/Object;)Z
+                    POP
+                    RETURN   (line 84)
+  end public void addShareableResource(String)
+
+  public transient void setShareableResources(String[]):
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 93)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.shareableResources Ljava/util/Set;
+                    ALOAD_1     // [Ljava/lang/String; shareableResources
+                    INVOKESTATIC java.util.Arrays.asList ([Ljava/lang/Object;)Ljava/util/List;
+                    INVOKEINTERFACE java.util.Set.addAll (Ljava/util/Collection;)Z
+                    POP
+                    RETURN   (line 94)
+  end public transient void setShareableResources(String[])
+
+  public Object getBean(String) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 104)
+                    ALOAD_1     // Ljava/lang/String; name
+                    LDC java.lang.Object
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getBean(String) throws org.springframework.beans.BeansException
+
+  public Object getBean(String, Class) throws org.springframework.beans.BeansException:
+    catch javax.naming.NamingException -> E5
+    | catch org.springframework.jndi.TypeMismatchNamingException -> E3
+    | | catch javax.naming.NameNotFoundException -> E1
+    | | |           ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 110)
+    | | |           ALOAD_1     // Ljava/lang/String; name
+    | | |           INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.isSingleton (Ljava/lang/String;)Z
+    | | |           IFEQ L0
+    | | |           ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 111)
+    | | |           ALOAD_1     // Ljava/lang/String; name
+    | | |           ALOAD_2     // Ljava/lang/Class; requiredType
+    | | |           INVOKESPECIAL org.springframework.jndi.support.SimpleJndiBeanFactory.doGetSingleton (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    | | catch javax.naming.NameNotFoundException -> E1
+    | catch org.springframework.jndi.TypeMismatchNamingException -> E3
+    catch javax.naming.NamingException -> E5
+                    ARETURN
+    catch javax.naming.NamingException -> E5
+    | catch org.springframework.jndi.TypeMismatchNamingException -> E3
+    | | catch javax.naming.NameNotFoundException -> E1
+    | | |       L0: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 114)
+    | | |           ALOAD_1     // Ljava/lang/String; name
+    | | |           ALOAD_2     // Ljava/lang/Class; requiredType
+    | | |           INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    | | catch javax.naming.NameNotFoundException -> E1
+    | catch org.springframework.jndi.TypeMismatchNamingException -> E3
+    catch javax.naming.NamingException -> E5
+                    ARETURN
+                E1: ASTORE_3   (line 117)
+                    NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 118)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    LDC "not found in JNDI environment"
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                E3: ASTORE_3   (line 120)
+                    NEW org.springframework.beans.factory.BeanNotOfRequiredTypeException   (line 121)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    ALOAD_3     // Lorg/springframework/jndi/TypeMismatchNamingException; ex
+                    INVOKEVIRTUAL org.springframework.jndi.TypeMismatchNamingException.getRequiredType ()Ljava/lang/Class;
+                    ALOAD_3     // Lorg/springframework/jndi/TypeMismatchNamingException; ex
+                    INVOKEVIRTUAL org.springframework.jndi.TypeMismatchNamingException.getActualType ()Ljava/lang/Class;
+                    INVOKESPECIAL org.springframework.beans.factory.BeanNotOfRequiredTypeException.<init> (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V
+                    ATHROW
+                E5: ASTORE_3   (line 123)
+                    NEW org.springframework.beans.factory.BeanDefinitionStoreException   (line 124)
+                    DUP
+                    LDC "JNDI environment"
+                    ALOAD_1     // Ljava/lang/String; name
+                    LDC "JNDI lookup failed"
+                    ALOAD_3     // Ljavax/naming/NamingException; ex
+                    INVOKESPECIAL org.springframework.beans.factory.BeanDefinitionStoreException.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ATHROW
+  end public Object getBean(String, Class) throws org.springframework.beans.BeansException
+
+  public Object getBean(Class) throws org.springframework.beans.BeansException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 130)
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL java.lang.Class.getSimpleName ()Ljava/lang/String;
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.getBean (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public Object getBean(Class) throws org.springframework.beans.BeansException
+
+  public transient Object getBean(String, Object[]) throws org.springframework.beans.BeansException:
+                    ALOAD_2     // [Ljava/lang/Object; args   (line 135)
+                    IFNULL L0
+                    NEW java.lang.UnsupportedOperationException   (line 136)
+                    DUP
+                    LDC "SimpleJndiBeanFactory does not support explicit bean creation arguments"
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 139)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.getBean (Ljava/lang/String;)Ljava/lang/Object;
+                    ARETURN
+  end public transient Object getBean(String, Object[]) throws org.springframework.beans.BeansException
+
+  public transient Object getBean(Class, Object[]) throws org.springframework.beans.BeansException:
+                    ALOAD_2     // [Ljava/lang/Object; args   (line 144)
+                    IFNULL L0
+                    NEW java.lang.UnsupportedOperationException   (line 145)
+                    DUP
+                    LDC "SimpleJndiBeanFactory does not support explicit bean creation arguments"
+                    INVOKESPECIAL java.lang.UnsupportedOperationException.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L0: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 148)
+                    ALOAD_1     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.getBean (Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end public transient Object getBean(Class, Object[]) throws org.springframework.beans.BeansException
+
+  public boolean containsBean(String):
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 153)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+                    IFEQ L1
+                L0: ICONST_1   (line 154)
+                    IRETURN
+    catch javax.naming.NamingException -> E0
+    |           L1: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 157)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKESPECIAL org.springframework.jndi.support.SimpleJndiBeanFactory.doGetType (Ljava/lang/String;)Ljava/lang/Class;
+    |               POP
+    |               ICONST_1   (line 158)
+    catch javax.naming.NamingException -> E0
+                    IRETURN
+                E0: ASTORE_2   (line 160)
+                    ICONST_0   (line 161)
+                    IRETURN
+  end public boolean containsBean(String)
+
+  public boolean isSingleton(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 167)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.shareableResources Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IRETURN
+  end public boolean isSingleton(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public boolean isPrototype(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 172)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.shareableResources Ljava/util/Set;
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEINTERFACE java.util.Set.contains (Ljava/lang/Object;)Z
+                    IFNE L0
+                    ICONST_1
+                    GOTO L1
+                L0: ICONST_0
+                L1: IRETURN
+  end public boolean isPrototype(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public boolean isTypeMatch(String, Class) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 177)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.getType (Ljava/lang/String;)Ljava/lang/Class;
+                    ASTORE_3
+                    ALOAD_2     // Ljava/lang/Class; targetType   (line 178)
+                    IFNULL L0
+                    ALOAD_3     // Ljava/lang/Class; type
+                    IFNULL L1
+                    ALOAD_2     // Ljava/lang/Class; targetType
+                    ALOAD_3     // Ljava/lang/Class; type
+                    INVOKEVIRTUAL java.lang.Class.isAssignableFrom (Ljava/lang/Class;)Z
+                    IFEQ L1
+                L0: ICONST_1
+                    GOTO L2
+                L1: ICONST_0
+                L2: IRETURN
+  end public boolean isTypeMatch(String, Class) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public Class getType(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException:
+    catch javax.naming.NamingException -> E1
+    | catch javax.naming.NameNotFoundException -> E0
+    | |             ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 184)
+    | |             ALOAD_1     // Ljava/lang/String; name
+    | |             INVOKESPECIAL org.springframework.jndi.support.SimpleJndiBeanFactory.doGetType (Ljava/lang/String;)Ljava/lang/Class;
+    | catch javax.naming.NameNotFoundException -> E0
+    catch javax.naming.NamingException -> E1
+                    ARETURN
+                E0: ASTORE_2   (line 186)
+                    NEW org.springframework.beans.factory.NoSuchBeanDefinitionException   (line 187)
+                    DUP
+                    ALOAD_1     // Ljava/lang/String; name
+                    LDC "not found in JNDI environment"
+                    INVOKESPECIAL org.springframework.beans.factory.NoSuchBeanDefinitionException.<init> (Ljava/lang/String;Ljava/lang/String;)V
+                    ATHROW
+                E1: ASTORE_2   (line 189)
+                    ACONST_NULL   (line 190)
+                    ARETURN
+  end public Class getType(String) throws org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+  public String[] getAliases(String):
+                    ICONST_0   (line 196)
+                    ANEWARRAY java.lang.String
+                    ARETURN
+  end public String[] getAliases(String)
+
+  private Object doGetSingleton(String, Class) throws javax.naming.NamingException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 202)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+                    DUP
+                    ASTORE_3
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 203)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+    |               IFEQ L3
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 204)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               ASTORE 4
+    |               ALOAD_2     // Ljava/lang/Class; requiredType   (line 205)
+    |               IFNULL L2
+    |               ALOAD_2     // Ljava/lang/Class; requiredType
+    |               ALOAD 4     // Ljava/lang/Object; jndiObject
+    |               INVOKEVIRTUAL java.lang.Class.isInstance (Ljava/lang/Object;)Z
+    |               IFNE L2
+    |               NEW org.springframework.jndi.TypeMismatchNamingException   (line 206)
+    |               DUP
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.convertJndiName (Ljava/lang/String;)Ljava/lang/String;   (line 207)
+    |               ALOAD_2     // Ljava/lang/Class; requiredType
+    |               ALOAD 4     // Ljava/lang/Object; jndiObject
+    |               IFNULL L0
+    |               ALOAD 4     // Ljava/lang/Object; jndiObject
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               GOTO L1
+    |           L0: ACONST_NULL
+    |           L1: INVOKESPECIAL org.springframework.jndi.TypeMismatchNamingException.<init> (Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;)V
+    |               ATHROW
+    |           L2: ALOAD 4     // Ljava/lang/Object; jndiObject   (line 209)
+    |               ALOAD_3
+    |               MONITOREXIT
+    finally -> E2
+                    ARETURN
+    finally -> E2
+    |           L3: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 211)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ALOAD_2     // Ljava/lang/Class; requiredType
+    |               INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    |               ASTORE 4
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 212)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.singletonObjects Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ALOAD 4     // Ljava/lang/Object; jndiObject
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD 4     // Ljava/lang/Object; jndiObject   (line 213)
+    |               ALOAD_3
+    |               MONITOREXIT
+    finally -> E2
+                    ARETURN
+    finally -> E2
+    |           E2: ASTORE 5   (line 214)
+    |               ALOAD_3
+    |               MONITOREXIT
+    finally -> E2
+                    ALOAD 5
+                    ATHROW
+  end private Object doGetSingleton(String, Class) throws javax.naming.NamingException
+
+  private Class doGetType(String) throws javax.naming.NamingException:
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 218)
+                    ALOAD_1     // Ljava/lang/String; name
+                    INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.isSingleton (Ljava/lang/String;)Z
+                    IFEQ L2
+                    ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 219)
+                    ALOAD_1     // Ljava/lang/String; name
+                    ACONST_NULL
+                    INVOKESPECIAL org.springframework.jndi.support.SimpleJndiBeanFactory.doGetSingleton (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ASTORE_2
+                    ALOAD_2     // Ljava/lang/Object; jndiObject   (line 220)
+                    IFNULL L0
+                    ALOAD_2     // Ljava/lang/Object; jndiObject
+                    INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+                    GOTO L1
+                L0: ACONST_NULL
+                L1: ARETURN
+                L2: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 223)
+                    GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+                    DUP
+                    ASTORE_2
+                    MONITORENTER
+    finally -> E2
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 224)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEINTERFACE java.util.Map.containsKey (Ljava/lang/Object;)Z
+    |               IFEQ L3
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 225)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               INVOKEINTERFACE java.util.Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    |               CHECKCAST java.lang.Class
+    |               ALOAD_2
+    |               MONITOREXIT
+    finally -> E2
+                    ARETURN
+    finally -> E2
+    |           L3: ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 228)
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ACONST_NULL
+    |               INVOKEVIRTUAL org.springframework.jndi.support.SimpleJndiBeanFactory.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    |               ASTORE_3
+    |               ALOAD_3     // Ljava/lang/Object; jndiObject   (line 229)
+    |               IFNULL L4
+    |               ALOAD_3     // Ljava/lang/Object; jndiObject
+    |               INVOKEVIRTUAL java.lang.Object.getClass ()Ljava/lang/Class;
+    |               GOTO L5
+    |           L4: ACONST_NULL
+    |           L5: ASTORE 4
+    |               ALOAD_0     // Lorg/springframework/jndi/support/SimpleJndiBeanFactory; this   (line 230)
+    |               GETFIELD org.springframework.jndi.support.SimpleJndiBeanFactory.resourceTypes Ljava/util/Map;
+    |               ALOAD_1     // Ljava/lang/String; name
+    |               ALOAD 4     // Ljava/lang/Class; type
+    |               INVOKEINTERFACE java.util.Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    |               POP
+    |               ALOAD 4     // Ljava/lang/Class; type   (line 231)
+    |               ALOAD_2
+    |               MONITOREXIT
+    finally -> E2
+                    ARETURN
+    finally -> E2
+    |           E2: ASTORE 5   (line 233)
+    |               ALOAD_2
+    |               MONITOREXIT
+    finally -> E2
+                    ALOAD 5
+                    ATHROW
+  end private Class doGetType(String) throws javax.naming.NamingException
+
+end public class org.springframework.jndi.support.SimpleJndiBeanFactory
+ -- (ClassFormatException) File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.reflect.AnnotatedElement': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:107)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+	at org.aspectj.weaver.World.resolve(World.java:326)
+	at org.aspectj.weaver.World.resolve(World.java:236)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3173)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2565)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:480)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:99)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.<init>(CommonAnnotationBeanPostProcessor.java:172)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.jndi.JndiLocatorSupport
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
+abort trouble in: 
+public abstract class org.springframework.jndi.JndiLocatorSupport extends org.springframework.jndi.JndiAccessor:
+  public static final String CONTAINER_PREFIX = "java:comp/env/"
+  private boolean resourceRef
+  public void <init>():
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 40)
+                    INVOKESPECIAL org.springframework.jndi.JndiAccessor.<init> ()V
+    constructor-execution(void org.springframework.jndi.JndiLocatorSupport.<init>())
+    |               ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 46)
+    |               ICONST_0
+    |               PUTFIELD org.springframework.jndi.JndiLocatorSupport.resourceRef Z
+    |               RETURN
+    constructor-execution(void org.springframework.jndi.JndiLocatorSupport.<init>())
+  end public void <init>()
+
+  public void setResourceRef(boolean):
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 56)
+                    ILOAD_1     // Z resourceRef
+                    PUTFIELD org.springframework.jndi.JndiLocatorSupport.resourceRef Z
+                    RETURN   (line 57)
+  end public void setResourceRef(boolean)
+
+  public boolean isResourceRef():
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 63)
+                    GETFIELD org.springframework.jndi.JndiLocatorSupport.resourceRef Z
+                    IRETURN
+  end public boolean isResourceRef()
+
+  protected Object lookup(String) throws javax.naming.NamingException:
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 77)
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    ACONST_NULL
+                    INVOKEVIRTUAL org.springframework.jndi.JndiLocatorSupport.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ARETURN
+  end protected Object lookup(String) throws javax.naming.NamingException
+
+  protected Object lookup(String, Class) throws javax.naming.NamingException:
+                    ALOAD_1     // Ljava/lang/String; jndiName   (line 91)
+                    LDC "'jndiName' must not be null"
+                    INVOKESTATIC org.springframework.util.Assert.notNull (Ljava/lang/Object;Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 92)
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    INVOKEVIRTUAL org.springframework.jndi.JndiLocatorSupport.convertJndiName (Ljava/lang/String;)Ljava/lang/String;
+                    ASTORE_3
+    catch javax.naming.NamingException -> E0
+    |               ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 95)
+    |               INVOKEVIRTUAL org.springframework.jndi.JndiLocatorSupport.getJndiTemplate ()Lorg/springframework/jndi/JndiTemplate;
+    |               ALOAD_3     // Ljava/lang/String; convertedName
+    |               ALOAD_2     // Ljava/lang/Class; requiredType
+    |               INVOKEVIRTUAL org.springframework.jndi.JndiTemplate.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    |               ASTORE 4
+    catch javax.naming.NamingException -> E0
+                    GOTO L2   (line 109)
+                E0: ASTORE 5   (line 97)
+                    ALOAD_3     // Ljava/lang/String; convertedName   (line 98)
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+                    IFNE L1
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 100)
+                    GETFIELD org.springframework.jndi.JndiLocatorSupport.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L0
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 101)
+                    GETFIELD org.springframework.jndi.JndiLocatorSupport.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Converted JNDI name ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/String; convertedName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "] not found - trying original name ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]. "
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD 5     // Ljavax/naming/NamingException; ex
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L0: ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 104)
+                    INVOKEVIRTUAL org.springframework.jndi.JndiLocatorSupport.getJndiTemplate ()Lorg/springframework/jndi/JndiTemplate;
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    ALOAD_2     // Ljava/lang/Class; requiredType
+                    INVOKEVIRTUAL org.springframework.jndi.JndiTemplate.lookup (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+                    ASTORE 4
+                    GOTO L2
+                L1: ALOAD 5     // Ljavax/naming/NamingException; ex   (line 107)
+                    ATHROW
+                L2: ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 110)
+                    GETFIELD org.springframework.jndi.JndiLocatorSupport.logger Lorg/apache/commons/logging/Log;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.isDebugEnabled ()Z
+                    IFEQ L3
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 111)
+                    GETFIELD org.springframework.jndi.JndiLocatorSupport.logger Lorg/apache/commons/logging/Log;
+                    NEW java.lang.StringBuilder
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Located object with JNDI name ["
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_3     // Ljava/lang/String; convertedName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "]"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    INVOKEINTERFACE org.apache.commons.logging.Log.debug (Ljava/lang/Object;)V
+                L3: ALOAD 4     // Ljava/lang/Object; jndiObject   (line 113)
+                    ARETURN
+  end protected Object lookup(String, Class) throws javax.naming.NamingException
+
+  protected String convertJndiName(String):
+                    ALOAD_0     // Lorg/springframework/jndi/JndiLocatorSupport; this   (line 127)
+                    INVOKEVIRTUAL org.springframework.jndi.JndiLocatorSupport.isResourceRef ()Z
+                    IFEQ L0
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    LDC "java:comp/env/"
+                    INVOKEVIRTUAL java.lang.String.startsWith (Ljava/lang/String;)Z
+                    IFNE L0
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    BIPUSH 58
+                    INVOKEVIRTUAL java.lang.String.indexOf (I)I
+                    ICONST_M1
+                    IF_ICMPNE L0
+                    NEW java.lang.StringBuilder   (line 128)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "java:comp/env/"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; jndiName
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ASTORE_1     // Ljava/lang/String; jndiName
+                L0: ALOAD_1     // Ljava/lang/String; jndiName   (line 130)
+                    ARETURN
+  end protected String convertJndiName(String)
+
+end public abstract class org.springframework.jndi.JndiLocatorSupport
+ -- (ClassFormatException) File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+org.aspectj.apache.bcel.classfile.ClassFormatException: File: 'java.lang.CharSequence': Invalid byte tag in constant pool: 15
+	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:192)
+	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:131)
+	at org.aspectj.apache.bcel.util.ClassLoaderRepository.loadClass(ClassLoaderRepository.java:323)
+	at org.aspectj.weaver.bcel.BcelWorld.lookupJavaClass(BcelWorld.java:402)
+	at org.aspectj.weaver.bcel.BcelWorld.resolveDelegate(BcelWorld.java:376)
+	at org.aspectj.weaver.ltw.LTWWorld.resolveDelegate(LTWWorld.java:107)
+	at org.aspectj.weaver.World.resolveToReferenceType(World.java:485)
+	at org.aspectj.weaver.World.resolve(World.java:326)
+	at org.aspectj.weaver.World.resolve(World.java:236)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:97)
+	at org.aspectj.weaver.bcel.BcelGenericSignatureToTypeXConverter.classTypeSignature2TypeX(BcelGenericSignatureToTypeXConverter.java:41)
+	at org.aspectj.weaver.bcel.BcelObjectType.ensureGenericSignatureUnpacked(BcelObjectType.java:810)
+	at org.aspectj.weaver.bcel.BcelObjectType.getDeclaredInterfaces(BcelObjectType.java:257)
+	at org.aspectj.weaver.ReferenceType.getDeclaredInterfaces(ReferenceType.java:626)
+	at org.aspectj.weaver.ResolvedType.getDirectSupertypes(ResolvedType.java:82)
+	at org.aspectj.weaver.patterns.TypePattern.matchesSubtypes(TypePattern.java:178)
+	at org.aspectj.weaver.patterns.ExactTypePattern.matchesSubtypes(ExactTypePattern.java:74)
+	at org.aspectj.weaver.patterns.TypePattern.matchesStatically(TypePattern.java:130)
+	at org.aspectj.weaver.patterns.OrTypePattern.matchesStatically(OrTypePattern.java:76)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactlyMethod(SignaturePattern.java:505)
+	at org.aspectj.weaver.patterns.SignaturePattern.matchesExactly(SignaturePattern.java:360)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:51)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:54)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:109)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:149)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3173)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2565)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:480)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:99)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1694)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1638)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1401)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1187)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:472)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:323)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:99)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:54)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:108)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:184)
+	at sun.instrument.TransformerManager.transform(Unknown Source)
+	at sun.instrument.InstrumentationImpl.transform(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.<init>(CommonAnnotationBeanPostProcessor.java:172)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.springExemple.presentation.Presentation2.main(Presentation2.java:13)
+
+error can't determine annotations of missing type org.springframework.transaction.annotation.Transactional
+when weaving type org.springframework.jndi.JndiAccessor
+when weaving classes 
+when weaving 
+ [Xlint:cantFindType]
