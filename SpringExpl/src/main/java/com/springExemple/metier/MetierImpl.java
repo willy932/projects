@@ -1,12 +1,13 @@
 package com.springExemple.metier;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.springExemple.DAO.IDao;
 
-@Service("metier")
+@Configurable(preConstruction=true)
 public class MetierImpl implements IMetier {
 	
 	@Autowired
