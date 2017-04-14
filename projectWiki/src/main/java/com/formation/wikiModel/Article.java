@@ -92,6 +92,7 @@ public class Article {
 	public Article(String titre,Date date, String image, String description, String contenu) {
 		super();
 		this.titre = titre;
+		this.idArt = idArt;
 		this.date = date;
 		this.image = image;
 		this.description = description;
@@ -101,6 +102,7 @@ public class Article {
 	public Article(String titre, String image, String description, String contenu) {
 		super();
 		this.titre = titre;
+		this.idArt = idArt;
 		this.date = date;
 		this.image = image;
 		this.description = description;
@@ -109,6 +111,11 @@ public class Article {
 	}
 	public Article() {
 		super();
+	}
+	@Override
+	public String toString() {
+		return "Article [idArt=" + idArt + ", titre=" + titre + ", date=" + date + ", image=" + image + ", description="
+				+ description + ", contenu=" + contenu + ", valide=" + valide + "]";
 	}
 	
 	

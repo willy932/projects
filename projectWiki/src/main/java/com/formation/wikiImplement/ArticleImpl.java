@@ -19,6 +19,7 @@ public class ArticleImpl implements ArticleDao{
 		em=emf.createEntityManager();
     	em.getTransaction().begin(); //jouvre la connexion avec la base de donnée
     	em.merge(a); // merge= create update 
+    	
     	em.getTransaction().commit(); //fermeture de la connexion 
 		
 	}

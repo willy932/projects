@@ -78,23 +78,19 @@
         <div class="tab-content">
         <s:form action="artAction" role="form" class="form-horizontal">
             <div class="form-group">
-                <label for="auteur1" class="col-sm-2 control-label">
-                    Titre</label>
+                <label for="auteur1" class="col-sm-2 control-label">Titre</label>
                 <div class="col-sm-10">
                     <s:textfield name="titre" type="text" class="form-control" id="titre" placeholder="Titre" />
                 </div>
-                <label for="auteur1" class="col-sm-2 control-label">
-                    Image</label>
+                <label for="auteur1" class="col-sm-2 control-label">Image</label>
                 <div class="col-sm-10">
                     <s:textfield name="image" type="text" class="form-control" id="image" placeholder="Lien de l'image" />
                 </div>
-                <label for="auteur1" class="col-sm-2 control-label">
-                    Description</label>
+                <label for="auteur1" class="col-sm-2 control-label">Description</label>
                 <div class="col-sm-10">
                     <textarea name="description" class="form-control" rows="2" id="description" placeholder="Description"></textarea>
                 </div>
-                <label for="auteur1" class="col-sm-2 control-label">
-                    Contenu</label>
+                <label for="auteur1" class="col-sm-2 control-label">Contenu</label>
                 <div class="col-sm-10">
                     <textarea name="contenu" id="editor1">
 

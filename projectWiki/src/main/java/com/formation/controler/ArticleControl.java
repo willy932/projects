@@ -77,6 +77,7 @@ public class ArticleControl {
 		
 		ArticleDao ad = new ArticleImpl();
 		Article art = new Article(titre, image, description, contenu);
+		art.getIdArt();
 		art.setDate(new Date());
 		ad.addArticle(art);
 		
