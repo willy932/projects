@@ -1,0 +1,7 @@
+com\formation\controlleur\ArticleController.class
+com\formation\daoImpl\ArticleDaoImpl.class
+com\formation\serviceImpl\ArticleServiceImpl.class
+com\formation\dao\ArticleDao.class
+com\formation\service\ArticleService.class
+com\formation\beans\Article.class
+com\formation\test\Main.class
